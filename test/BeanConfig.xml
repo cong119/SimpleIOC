@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+    <bean id="computer" class="com.cong.ioc.Computer">
+        <property name="id" value="cong123"></property>
+        <property name="keyboard" ref="keyboard"></property>
+    </bean>
+    <bean id="keyboard" class="com.cong.ioc.Keyboard">
+        <property name="buttonNum" value="26"></property>
+        <property name="color" value="Black"></property>
+    </bean>
+    <bean id="screen" class="com.cong.ioc.Screen">
+        <property name="length" value="1360"></property>
+        <property name="width" value="750"></property>
+    </bean>
+</beans>
