@@ -159,5 +159,5 @@ public abstract class AbstractBeanFactory implements BeanFactory {
         }
     }
 
-    public abstract void preInstanceSingletons() throws Exception;
+    public abstract void preInstantiateSingletons() throws Exception;
 }

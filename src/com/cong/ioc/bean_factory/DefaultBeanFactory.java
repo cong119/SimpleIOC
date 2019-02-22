@@ -38,7 +38,7 @@ public class DefaultBeanFactory extends AbstractBeanFactory implements BeanDefin
     }
 
     @Override
-    public void preInstanceSingletons() throws Exception {
+    public void preInstantiateSingletons() throws Exception {
         for(String beanName : beanDefinitionNames) {
             BeanDefinition beanDefinition = beanDefinitionMap.get(beanName);
 
